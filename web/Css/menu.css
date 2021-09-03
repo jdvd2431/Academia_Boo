@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Scope One', serif;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #F2F3F4;
+  overflow: hidden;
+    background: url("../img/baile.jpg") no-repeat top center / cover;
+}
+.sidebar {
+    top: 15px;
+    position: fixed;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    max-height: 750px;
+    border-radius: 5px;
+    background: #EDEEE8;
+    box-shadow: 10px 10px 10px -6px black;
+    transition: all .5s ease;
+    overflow-y: scroll;
+}
+#titulo{
+    margin-left:40px; 
+}
+.sidebar header {
+  
+  font-size: 20px;
+  color: black;
+  line-height: 70px;
+  background:  #CBCBCB ;
+  user-select: none;
+  border-radius: 5px;
+  
+}
+/*.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: #666;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(255,255,255,.1);
+  transition: .4s;
+  text-decoration: none;
+}
+ul li:hover a{
+  padding-left: 50px;
+ text-decoration: none;
+}*/
+.sidebar ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar .menu li a {
+    color: #494949;
+    display: block;
+    padding: 15px 20px;
+    background-color: #e9e9e9;
+    text-decoration: none;
+}
+.sidebar .menu li a:hover{
+    padding-left: 40px;
+    transition: .5s;
+}
+.sidebar .menu .icono {
+    font-size: 20px;
+    line-height: 18px;
+}
+.sidebar .menu .icono.izquierda{
+    float: left;
+    margin-right: 10px;
+}
+.sidebar .menu .icono.derecha{
+    float: right;
+    margin-left: 10px;
+}
+.sidebar .menu ul {
+     display: none;
+     text-decoration: none;
+}
+.sidebar .menu ul li a{
+    background: #424242;
+    color: #e9e9e9;
+    text-decoration: none;
+    margin-left: -31px;
+}
+.sidebar .menu .activado > a{
+    background: #B2B2B2;
+    color: #fff;
+}
+
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 45px;
+  background: transparent;
+  color: #EDEEE8;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 5px;
+  font-size:35px;
+  background: transparent;
+  color: white;
+  padding: 4px 6px;
+  margin: 20px 10px  0px 65px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+   top:15px;
+  left: 20px;
+  bottom:10px;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+  
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+section{
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+.cerrar{
+    border-radius:10px;
+    margin-top: 20px;
+    margin-left:65px;
+    padding: 10px;
+    text-decoration: none;
+    background: #FB6565;
+    border: none;
+    color:white;
+}
+.cerrar:hover{
+    background: white;
+    color:black;
+    border-radius:10px ;
+    transition: all .5s;
+}
+section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  height: 100vh;
+  
+  
+}
+.animation {
+  animation: pulse 1s linear infinite both;
+}
+@media (prefers-reduced-motion) {
+  .animation {
+    animation-name: dissolve;
+  }
+}
+.contenido{
+  margin-top: 100px;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDEEE8;
+    transform-style: preserve-3d;
+}
+body:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.8);
+}
+

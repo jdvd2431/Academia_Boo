@@ -1,0 +1,139 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/07/2021, 01:08:59 PM
+    Author     : Sebas
+*/
+.contenedor{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background:#fefefe;
+    padding: 15px;
+    margin-radius:5px; 
+}
+body{
+    background:#ECECEC;
+}
+h2{
+    width:100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    background: #007bff;
+    border-radius:7px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    color: white;
+}
+h2:hover{
+    background: #4CA3FF;
+    color: white;
+}
+.verde{
+    background: green;
+    color: white;
+    border-radius:5px; 
+}
+.rojo{
+    background:brown;
+    color: white;
+}
+.overlay {
+    background: rgb(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.activado {
+    visibility: visible;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: -7px;
+}
+
+.form-registro {
+    width: 40%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.tituloR {
+    background: #007bff;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 5px solid crimson;
+}
+
+.tituloR .cerrar-registro {
+    font-size: 25px;
+    line-height: 0px;
+    display: block;
+    margin-top: -5px;
+    text-align: right;
+    color: #BBBBBB;
+}
+
+.formulario {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.formulario .input-50 {
+    width: 45%;
+}
+
+.formulario .input-50:hover {
+    width: 46%;
+    transition: 0.5s;
+}
+
+.selector {
+    width: 100%;
+}
+
+.btn {
+    width: 20%;
+    margin-left: 40%;
+    color: white;
+    background: #007bff;
+    border: solid 2px #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #4371A3;
+    color: #fff;
+}
